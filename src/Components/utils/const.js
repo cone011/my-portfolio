@@ -1,0 +1,6 @@
+export const SOCIAL_MEDIA = Object.freeze({
+  FACEBOOK: "FACEBOOK",
+  INSTRAGRAM: "INSTAGRAM",
+  LINKEDIN: "LINKEDIN",
+  TWITTER: "TWITTER",
+});
