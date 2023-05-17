@@ -27,7 +27,7 @@ export const Dark = Object.freeze({
   fontlg: "1.25em",
   fontxl: "2em",
   fontxxl: "3em",
-  fontxxl: "4em",
+  fontxxxl: "4em",
   fontButton: "0.875em",
   navHeight: "5rem",
 });

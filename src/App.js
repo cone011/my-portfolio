@@ -5,6 +5,9 @@ import { Ligth } from "./Styles/Theme";
 import Navegation from "./Components/UI/Navegation";
 import Home from "./Components/Home";
 import RoadMap from "./Components/Roadmap";
+import Footer from "./Components/UI/Footer";
+import ScrollToTop from "./Components/UI/ScrollToTop";
+import AboutMe from "./Components/AboutMe";
 function App() {
   return (
     <main>
@@ -13,7 +16,10 @@ function App() {
         <ThemeProvider theme={Ligth}>
           <Navegation />
           <Home />
+          <AboutMe />
           <RoadMap />
+          <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </Fragment>
     </main>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Logo from "./Logo";
 
 const Navegation = () => {
   const [isClick, setIsClick] = useState(false);
@@ -16,6 +17,7 @@ const Navegation = () => {
   return (
     <Section id="navigation">
       <NavBar>
+        <Logo />
         <HamburgerMenu
           click={isClick}
           onClick={() => setIsClick(!isClick)}
@@ -68,6 +70,7 @@ const Menu = styled.ul`
     touch-action: none;
   }
 `;
+
 const MenuItem = styled.li`
   margin: 0 1rem;
   color: ${(props) => props.theme.text};
@@ -92,6 +95,7 @@ const MenuItem = styled.li`
     }
   }
 `;
+
 const HamburgerMenu = styled.span`
   width: ${(props) => (props.click ? "2rem" : "1.5rem")};
   height: 2px;

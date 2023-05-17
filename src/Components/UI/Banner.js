@@ -4,14 +4,14 @@ import {
   Title,
   BtnContainer,
   JoiNow,
-} from "../Styles/Banner";
+} from "../../Styles/Banner";
 
-import img1 from "../Assets/bighead.svg";
-import img2 from "../Assets/bighead-1.svg";
-import img3 from "../Assets/bighead-2.svg";
-import img4 from "../Assets/bighead-3.svg";
-import img5 from "../Assets/bighead-4.svg";
-import img6 from "../Assets/bighead-5.svg";
+import img1 from "../../Assets/bighead.svg";
+import img2 from "../../Assets/bighead-1.svg";
+import img3 from "../../Assets/bighead-2.svg";
+import img4 from "../../Assets/bighead-3.svg";
+import img5 from "../../Assets/bighead-4.svg";
+import img6 from "../../Assets/bighead-5.svg";
 
 const Banner = () => {
   return (
