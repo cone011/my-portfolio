@@ -2,10 +2,11 @@ import styled from "styled-components";
 import { Dark } from "../Styles/Theme";
 import { lazy, Suspense } from "react";
 import Loading from "./UI/Loading";
+import { ABOUT_ME } from "./utils/const";
 
 const AboutMe = () => {
   return (
-    <Section>
+    <Section id={ABOUT_ME.path}>
       <Container>
         <Box>
           <Suspense fallback={<Loading />}>

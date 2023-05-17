@@ -1,19 +1,13 @@
 import styled from "styled-components";
-import { useState } from "react";
 
 const MenuItem = (props) => {
-  const { path, name } = props;
-  const [isClick, setIsClick] = useState(false);
-  const scrollTo = (id) => {
-    let element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    });
-    setIsClick(!isClick);
+  const { path, name, onReturn } = props;
+
+  const onReturnMenu = () => {
+    onReturn(path);
   };
-  return <ItemMenu onClick={() => scrollTo(path)}>{name}</ItemMenu>;
+
+  return <ItemMenu onClick={onReturnMenu}>{name}</ItemMenu>;
 };
 
 const ItemMenu = styled.li`

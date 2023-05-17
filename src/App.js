@@ -17,7 +17,7 @@ function App() {
           <Navegation />
           <Home />
           <AboutMe />
-          <RoadMap />
+          <RoadMap titleRoadMap={"Experiencia Loboral"} />
           <Footer />
           <ScrollToTop />
         </ThemeProvider>

@@ -1,21 +1,26 @@
 import styled from "styled-components";
 import DrawSvg from "./UI/DrawSvg";
 import RoadMapItem from "./RoadMapItems";
+import { WORK_EXPERIENCE } from "./utils/const";
 
-const RoadMap = () => {
+const RoadMap = (props) => {
+  const { titleRoadMap } = props;
   return (
     <Section id="roadmap">
-      <Title>RoadMap</Title>
+      <Title>{titleRoadMap}</Title>
       <Container>
         <SvgContainer>
           <DrawSvg />
         </SvgContainer>
         <Items>
+          {WORK_EXPERIENCE.map((item) => (
+            <RoadMapItem title={item.companyName} text={item.role} />
+          ))}
+          {/* <RoadMapItem />
           <RoadMapItem />
           <RoadMapItem />
           <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem />
+          <RoadMapItem /> */}
         </Items>
       </Container>
     </Section>

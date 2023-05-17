@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
+import { MENU_ITEMS } from "../utils/const";
+import MenuItem from "./MenuItem";
 
 const Navegation = () => {
   const [isClick, setIsClick] = useState(false);
@@ -14,6 +16,10 @@ const Navegation = () => {
     setIsClick(!isClick);
   };
 
+  const onReturnMenuNavigation = (data) => {
+    scrollTo(data);
+  };
+
   return (
     <Section id="navigation">
       <NavBar>
@@ -23,12 +29,13 @@ const Navegation = () => {
           onClick={() => setIsClick(!isClick)}
         ></HamburgerMenu>
         <Menu click={isClick}>
-          <MenuItem onClick={() => scrollTo("home")}>Home</MenuItem>
-          <MenuItem onClick={() => scrollTo("about")}>Acerca de</MenuItem>
-          <MenuItem onClick={() => scrollTo("roadmap")}>RoadMap</MenuItem>
-          <MenuItem onClick={() => scrollTo("cards")}>Cards</MenuItem>
-          <MenuItem onClick={() => scrollTo("team")}>Equipo</MenuItem>
-          <MenuItem onClick={() => scrollTo("preguntas")}>Preguntas</MenuItem>
+          {MENU_ITEMS.map((item) => (
+            <MenuItem
+              path={item.path}
+              name={item.name}
+              onReturn={onReturnMenuNavigation}
+            />
+          ))}
         </Menu>
       </NavBar>
     </Section>
@@ -68,31 +75,6 @@ const Menu = styled.ul`
     flex-direction: column;
     justify-content: center;
     touch-action: none;
-  }
-`;
-
-const MenuItem = styled.li`
-  margin: 0 1rem;
-  color: ${(props) => props.theme.text};
-  cursor: pointer;
-  font-size: ${(props) => props.theme.fontlg};
-  &::after {
-    content: " ";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: ${(props) => props.theme.text};
-    transition: width 0.3s ease;
-  }
-  &:hover::after {
-    width: 100%;
-  }
-  @media (max-width: 64em) {
-    margin: 1rem 0;
-    font-size: ${(props) => props.theme.fontmd};
-    &::after {
-      display: none;
-    }
   }
 `;
 

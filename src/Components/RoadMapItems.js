@@ -6,8 +6,8 @@ const RoadMapItem = (props) => {
     <Item>
       <ItemContainer>
         <Box>
-          <Title>Title</Title>
-          <Text>Text</Text>
+          <Title>{title}</Title>
+          <Text>{text}</Text>
         </Box>
       </ItemContainer>
     </Item>
