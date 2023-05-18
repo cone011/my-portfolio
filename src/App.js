@@ -8,6 +8,7 @@ import RoadMap from "./Components/Roadmap";
 import Footer from "./Components/UI/Footer";
 import ScrollToTop from "./Components/UI/ScrollToTop";
 import AboutMe from "./Components/AboutMe";
+import Technologies from "./Components/Technologies/Technologies";
 function App() {
   return (
     <main>
@@ -18,6 +19,7 @@ function App() {
           <Home />
           <AboutMe />
           <RoadMap titleRoadMap={"Experiencia Loboral"} />
+          <Technologies />
           <Footer />
           <ScrollToTop />
         </ThemeProvider>
