@@ -4,13 +4,14 @@ import { lazy, Suspense } from "react";
 import Loading from "./UI/Loading";
 import { ABOUT_ME } from "./utils/const";
 
+const Carrousel = lazy(() => import("../Components/UI/Carrousel/Carrousel"));
 const AboutMe = () => {
   return (
     <Section id={ABOUT_ME.path}>
       <Container>
         <Box>
           <Suspense fallback={<Loading />}>
-            <h1>Hola por ahora</h1>
+            <Carrousel />
           </Suspense>
         </Box>
         <Box>

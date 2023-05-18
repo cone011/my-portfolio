@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Arrow from "../../Assets/Arrow.svg";
+import Arrow from "../../../Assets/Arrow.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   EffectCards,
@@ -13,6 +13,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-cards";
+
+import Javascript from "../../../Assets/Technologies/JavaScript.svg";
+import CarrouselItem from "./CarrouselItem";
 
 const Carrousel = () => {
   return (
@@ -31,7 +34,17 @@ const Carrousel = () => {
         pagination={{ type: "fraction" }}
         scrollbar={{ draggable: true }}
         effect={"cards"}
-      ></Swiper>
+      >
+        <SwiperSlide>
+          <img width={500} height={400} src={Javascript} alt="ntf" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img width={500} height={400} src={Javascript} alt="ntf" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img width={500} height={400} src={Javascript} alt="ntf" />
+        </SwiperSlide>
+      </Swiper>
     </Container>
   );
 };
@@ -72,7 +85,7 @@ const Container = styled.div`
       object-fit: cover;
     }
   }
-  .swipper-button-next {
+  .swiper-button-next {
     color: ${(props) => props.theme.text};
     right: 0;
     width: 4rem;
@@ -80,7 +93,7 @@ const Container = styled.div`
     background-image: url(${Arrow});
     background-position: center;
     background-size: cover;
-    & > *:after {
+    &:after {
       display: none;
     }
     @media (max-width: 64em) {
@@ -99,7 +112,7 @@ const Container = styled.div`
     background-position: center;
     background-size: cover;
     transform: rotate(180deg);
-    & > * {
+    &:after {
       display: none;
     }
     @media (max-width: 64em) {

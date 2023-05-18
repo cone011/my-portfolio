@@ -1,3 +1,17 @@
+import CSharp from "../../Assets/Technologies/C#.svg";
+import CSS from "../../Assets/Technologies/CSS.svg";
+import Docker from "../../Assets/Technologies/Docker.svg";
+import Express from "../../Assets/Technologies/ExpressJS.svg";
+import Git from "../../Assets/Technologies/Git.svg";
+import HTML from "../../Assets/Technologies/Html.svg";
+import JavaScript from "../../Assets/Technologies/JavaScript.svg";
+import MongoDB from "../../Assets/Technologies/MongoDB.svg";
+import MySQL from "../../Assets/Technologies/MySQL.svg";
+import ReactJS from "../../Assets/Technologies/React.svg";
+import SocketIO from "../../Assets/Technologies/SocketIO.svg";
+import SQLServer from "../../Assets/Technologies/SQLServer.svg";
+import VBNet from "../../Assets/Technologies/Vbnet.svg";
+
 export const SOCIAL_MEDIA = Object.freeze({
   FACEBOOK: "FACEBOOK",
   INSTRAGRAM: "INSTAGRAM",
@@ -50,7 +64,7 @@ export const TECH_EXPERIENCE = [
   Object.freeze({
     id: 1,
     name: "React JS",
-    image: "FALTA",
+    image: ReactJS,
     rating: 100,
   }),
   Object.freeze({
@@ -74,7 +88,7 @@ export const TECH_EXPERIENCE = [
   Object.freeze({
     id: 5,
     name: "JavaScript",
-    image: "falta",
+    image: JavaScript,
     rating: 85,
   }),
   Object.freeze({
