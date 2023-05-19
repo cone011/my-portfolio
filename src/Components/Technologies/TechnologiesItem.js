@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { TYPE_SHOW_CASE } from "../utils/const";
 import RatingImg from "../../Assets/Rating.svg";
+import IMG_SVG from "../../Assets/bighead-1.svg";
 
 const TechnologiesItem = (props) => {
   const { img, number, name, rating, rowRef } = props;
-  console.log(props);
   let play = (event) => {
     rowRef.current.style.animationPlayState = TYPE_SHOW_CASE.RUNNING;
   };
@@ -17,7 +17,7 @@ const TechnologiesItem = (props) => {
       onMouseOver={(event) => pause(event)}
       onMouseOut={(event) => play(event)}
     >
-      <img width={500} height={400} src={img} />
+      <img width={500} height={400} src={IMG_SVG} />
       <Details>
         <div>
           <span>{name}</span>
@@ -55,7 +55,7 @@ const ImgContainer = styled.div`
 `;
 
 const Details = styled.div`
-  display: flex;
+  ddisplay: flex;
   justify-content: space-between;
   padding: 0.8rem 1rem;
   background-color: ${(props) => props.theme.text};

@@ -1,30 +1,51 @@
 import styled from "styled-components";
 import DrawSvg from "./UI/DrawSvg";
 import RoadMapItem from "./RoadMapItems";
-import { WORK_EXPERIENCE } from "./utils/const";
+import {
+  ROAD_MAP_ACADEMY,
+  ROAD_MAP_WORK,
+  TYPE_ROAD_MAP,
+  WORK_EXPERIENCE,
+  ACADEMY_EXPERIENCE,
+} from "./utils/const";
 
 const RoadMap = (props) => {
   const { titleRoadMap } = props;
-  return (
-    <Section id="roadmap">
-      <Title>{titleRoadMap}</Title>
-      <Container>
-        <SvgContainer>
-          <DrawSvg />
-        </SvgContainer>
-        <Items>
-          {WORK_EXPERIENCE.map((item) => (
-            <RoadMapItem title={item.companyName} text={item.role} />
-          ))}
-          {/* <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem />
-          <RoadMapItem /> */}
-        </Items>
-      </Container>
-    </Section>
-  );
+  if (titleRoadMap === TYPE_ROAD_MAP.WORK_EXPERIENCE) {
+    return (
+      <Section id={ROAD_MAP_WORK.path}>
+        <Title>{titleRoadMap}</Title>
+        <Container>
+          <SvgContainer>
+            <DrawSvg />
+          </SvgContainer>
+          <Items>
+            {WORK_EXPERIENCE.map((item) => (
+              <RoadMapItem title={item.companyName} text={item.role} />
+            ))}
+          </Items>
+        </Container>
+      </Section>
+    );
+  }
+
+  if (titleRoadMap === TYPE_ROAD_MAP.ACADEMY_EXPERIENCE) {
+    return (
+      <Section id={ROAD_MAP_ACADEMY.path}>
+        <Title>{titleRoadMap}</Title>
+        <Container>
+          <SvgContainer>
+            <DrawSvg />
+          </SvgContainer>
+          <Items>
+            {ACADEMY_EXPERIENCE.map((item) => (
+              <RoadMapItem title={item.name} text={item.institucion} />
+            ))}
+          </Items>
+        </Container>
+      </Section>
+    );
+  }
 };
 
 const Section = styled.div`

@@ -33,13 +33,6 @@ const Footer = () => {
         </Left>
         <MenuItems></MenuItems>
       </Container>
-      <Bottom>
-        <span>&copy; {new Date().getFullYear()}</span>
-        <span>
-          Accede a mi GitHub aqui &#10084;{" "}
-          <a href="https://github.com/cone011" target="_blank" />
-        </span>
-      </Bottom>
     </Section>
   );
 };
@@ -100,26 +93,6 @@ const MenuItems = styled.div`
   grid-template-rows: repeat(3, 1fr);
   @media (max-width: 48em) {
     display: none;
-  }
-`;
-
-const Bottom = styled.div`
-  width: 75%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: ${(props) => props.theme.fontlg};
-  a {
-    text-description: underline;
-  }
-  @media (max-width: 48em) {
-    flex-direction: column;
-    width: 100%;
-    font-size: ${(props) => props.theme.fontmd};
-  }
-  span {
-    margin-bottom: 1rem;
   }
 `;
 

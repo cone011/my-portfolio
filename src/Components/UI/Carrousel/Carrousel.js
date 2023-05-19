@@ -15,38 +15,74 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cards";
 
 import Javascript from "../../../Assets/Technologies/JavaScript.svg";
-import CarrouselItem from "./CarrouselItem";
+import ReactJS from "../../../Assets/Technologies/React.svg";
+import { TYPE_CARROUSEL } from "../../utils/const";
 
-const Carrousel = () => {
-  return (
-    <Container>
-      <Swiper
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        modules={[
-          EffectCards,
-          Navigation,
-          Pagination,
-          Scrollbar,
-          A11y,
-          Autoplay,
-        ]}
-        navigation={true}
-        pagination={{ type: "fraction" }}
-        scrollbar={{ draggable: true }}
-        effect={"cards"}
-      >
-        <SwiperSlide>
-          <img width={500} height={400} src={Javascript} alt="ntf" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img width={500} height={400} src={Javascript} alt="ntf" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img width={500} height={400} src={Javascript} alt="ntf" />
-        </SwiperSlide>
-      </Swiper>
-    </Container>
-  );
+const Carrousel = (props) => {
+  const { typeCarrousel } = props;
+  if (typeCarrousel === TYPE_CARROUSEL.INITIAL) {
+    return (
+      <Container>
+        <Swiper
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          modules={[
+            EffectCards,
+            Navigation,
+            Pagination,
+            Scrollbar,
+            A11y,
+            Autoplay,
+          ]}
+          navigation={true}
+          pagination={{ type: "fraction" }}
+          scrollbar={{ draggable: true }}
+          effect={"cards"}
+        >
+          <SwiperSlide>
+            <img width={500} height={400} src={Javascript} alt="ntf" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img width={500} height={400} src={Javascript} alt="ntf" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img width={500} height={400} src={Javascript} alt="ntf" />
+          </SwiperSlide>
+        </Swiper>
+      </Container>
+    );
+  }
+
+  if (typeCarrousel === TYPE_CARROUSEL.PROJECTS) {
+    return (
+      <Container>
+        <Swiper
+          autoplay={{ delay: 15000, disableOnInteraction: false }}
+          modules={[
+            EffectCards,
+            Navigation,
+            Pagination,
+            Scrollbar,
+            A11y,
+            Autoplay,
+          ]}
+          navigation={true}
+          pagination={{ type: "fraction" }}
+          scrollbar={{ draggable: true }}
+          effect={"cards"}
+        >
+          <SwiperSlide>
+            <img width={500} height={400} src={ReactJS} alt="ntf" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img width={500} height={400} src={ReactJS} alt="ntf" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img width={500} height={400} src={ReactJS} alt="ntf" />
+          </SwiperSlide>
+        </Swiper>
+      </Container>
+    );
+  }
 };
 
 const Container = styled.div`
