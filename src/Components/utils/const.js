@@ -182,3 +182,43 @@ export const TECH_EXPERIENCE = [
     rating: 70,
   }),
 ];
+
+export const PROJECTS_LIST = [
+  Object.freeze({
+    id: 1,
+    description: "A DESCRIPTION",
+    name: "Pokemon App",
+    technology: "ReactJS, JavaScript, HTML, CSS",
+    frontEnd: "",
+    image: "FALTA PONER IMAGEN",
+  }),
+  Object.freeze({
+    id: 2,
+    name: "Ecommerce Fake",
+    description: "A DESCRIPTION",
+    technology:
+      "ReactJS, JavaScript, HTML, CSS, ExpressJS, NodeJS, MongoDB, JsonWebToken, Docker",
+    frontEnd: "",
+    backEnd: "",
+    image: "falta poner",
+  }),
+  Object.freeze({
+    id: 3,
+    name: "Retrospective App",
+    description: "A DESCRIPTION",
+    technology:
+      "ReactJS, JavaScript, HTML, CSS, ExpressJS, NodeJS, MongoDB, Socket.io, JsonWebToken, Docker",
+    frontEnd: "",
+    backEnd: "",
+    image: "falta poner",
+  }),
+  Object.freeze({
+    id: 4,
+    name: "Portfolio",
+    description: "A DESCRIPTION",
+    technology: "ReactJS, JavaScript, HTML, CSS, Docker",
+    frontEnd: "",
+    backEnd: "",
+    image: "",
+  }),
+];
