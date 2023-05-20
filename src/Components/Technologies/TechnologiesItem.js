@@ -17,7 +17,7 @@ const TechnologiesItem = (props) => {
       onMouseOver={(event) => pause(event)}
       onMouseOut={(event) => play(event)}
     >
-      <img width={500} height={400} src={IMG_SVG} />
+      <img width={500} height={400} src={img} />
       <Details>
         <div>
           <span>{name}</span>
@@ -50,7 +50,7 @@ const ImgContainer = styled.div`
   }
   img {
     width: 100%;
-    height: auto;
+    height: 75%;
   }
 `;
 

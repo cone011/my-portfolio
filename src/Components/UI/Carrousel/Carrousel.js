@@ -19,7 +19,14 @@ import ReactJS from "../../../Assets/Technologies/React.svg";
 import { TYPE_CARROUSEL } from "../../utils/const";
 
 const Carrousel = (props) => {
-  const { typeCarrousel } = props;
+  const { typeCarrousel, listProject, onReturnProjectData } = props;
+
+  const onChangeProjectData = (data) => {
+    const { activeIndex } = data;
+    const currentValue = listProject[activeIndex];
+    onReturnProjectData(currentValue);
+  };
+
   if (typeCarrousel === TYPE_CARROUSEL.INITIAL) {
     return (
       <Container>
@@ -69,16 +76,20 @@ const Carrousel = (props) => {
           pagination={{ type: "fraction" }}
           scrollbar={{ draggable: true }}
           effect={"cards"}
+          onSlideChange={onChangeProjectData}
         >
+          {listProject.map((item) => (
+            <SwiperSlide key={item.id}>
+              <img width={500} height={400} src={ReactJS} alt="ntf" />
+            </SwiperSlide>
+          ))}
+          {/* <SwiperSlide></SwiperSlide>
           <SwiperSlide>
             <img width={500} height={400} src={ReactJS} alt="ntf" />
           </SwiperSlide>
           <SwiperSlide>
             <img width={500} height={400} src={ReactJS} alt="ntf" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img width={500} height={400} src={ReactJS} alt="ntf" />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </Container>
     );
