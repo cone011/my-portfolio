@@ -1,9 +1,9 @@
 import styled, { keyframes } from "styled-components";
 import { useRef } from "react";
 import { TECHNOLOGY, TECH_EXPERIENCE } from "../utils/const";
-import TechnologiesItem from "./TechnologiesItem";
+import TechnologiesItemRow from "./TechnologiesItemRow";
 
-const Technologies = () => {
+const TechnologiesRow = () => {
   const upperRef = useRef(null);
   const downRef = useRef(null);
   const middle = Math.floor(TECH_EXPERIENCE.length / 2);
@@ -11,7 +11,7 @@ const Technologies = () => {
     <Section id={TECHNOLOGY.path}>
       <Row direction="none" ref={upperRef}>
         {TECH_EXPERIENCE.slice(0, middle).map((item) => (
-          <TechnologiesItem
+          <TechnologiesItemRow
             key={item.id}
             name={item.name}
             img={item.image}
@@ -23,7 +23,7 @@ const Technologies = () => {
       </Row>
       <Row direction="reverse" ref={downRef}>
         {TECH_EXPERIENCE.slice(middle).map((item) => (
-          <TechnologiesItem
+          <TechnologiesItemRow
             key={item.id}
             name={item.name}
             img={item.image}
@@ -74,4 +74,4 @@ const Row = styled.div`
   animation: ${Move} linear infinite ${(props) => props.direction};
 `;
 
-export default Technologies;
+export default TechnologiesRow;

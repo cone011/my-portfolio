@@ -8,9 +8,10 @@ import RoadMap from "./Components/Roadmap";
 import Footer from "./Components/UI/Footer";
 import ScrollToTop from "./Components/UI/ScrollToTop";
 import AboutMe from "./Components/AboutMe";
-import Technologies from "./Components/Technologies/Technologies";
 import { TYPE_ROAD_MAP } from "./Components/utils/const";
 import Projects from "./Components/Projects/Projects";
+import TechnologiesCarrousel from "./Components/TechnologiesCarrousel/TechnologiesCarrousel";
+import Technology from "./Components/Technology/Technology";
 function App() {
   return (
     <main>
@@ -21,7 +22,7 @@ function App() {
           <Home />
           <AboutMe />
           <RoadMap titleRoadMap={TYPE_ROAD_MAP.WORK_EXPERIENCE} />
-          <Technologies />
+          <Technology />
           <RoadMap titleRoadMap={TYPE_ROAD_MAP.ACADEMY_EXPERIENCE} />
           <Projects />
           <Footer />

@@ -1,25 +1,25 @@
 import styled from "styled-components";
 import { lazy, Suspense, useState } from "react";
+import { TECH_EXPERIENCE, TYPE_CARROUSEL } from "../utils/const";
 import Loading from "../UI/Loading";
-import { TYPE_CARROUSEL, PROJECTS_LIST } from "../utils/const";
 
 const Carrousel = lazy(() => import("../UI/Carrousel/Carrousel"));
 
-const Projects = () => {
-  const [currentValue, setCurrentValue] = useState(PROJECTS_LIST[0]);
+const TechnologiesCarrousel = () => {
+  const [currentValue, setCurrentValue] = useState(TECH_EXPERIENCE[0]);
 
   const onReturnProjectData = (data) => {
     setCurrentValue(data);
   };
 
   return (
-    <Section id="projects">
+    <Section id="tech">
       <Container>
         <Box>
           <Suspense fallback={<Loading />}>
             <Carrousel
-              typeCarrousel={TYPE_CARROUSEL.PROJECTS}
-              listProject={PROJECTS_LIST}
+              typeCarrousel={TYPE_CARROUSEL.TECHNOLOGY}
+              listProject={TECH_EXPERIENCE}
               onReturnProjectData={onReturnProjectData}
             />
           </Suspense>
@@ -151,4 +151,4 @@ const SutTextLight = styled.p`
   }
 `;
 
-export default Projects;
+export default TechnologiesCarrousel;

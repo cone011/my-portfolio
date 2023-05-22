@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { TYPE_SHOW_CASE } from "../utils/const";
 import RatingImg from "../../Assets/Rating.svg";
-import IMG_SVG from "../../Assets/bighead-1.svg";
 
-const TechnologiesItem = (props) => {
+const TechnologiesItemRow = (props) => {
   const { img, number, name, rating, rowRef } = props;
   let play = (event) => {
     rowRef.current.style.animationPlayState = TYPE_SHOW_CASE.RUNNING;
@@ -90,4 +89,4 @@ const Rating = styled.div`
   }
 `;
 
-export default TechnologiesItem;
+export default TechnologiesItemRow;

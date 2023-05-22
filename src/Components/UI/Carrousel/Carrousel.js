@@ -59,6 +59,35 @@ const Carrousel = (props) => {
     );
   }
 
+  if (typeCarrousel === TYPE_CARROUSEL.TECHNOLOGY) {
+    return (
+      <Container>
+        <Swiper
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          modules={[
+            EffectCards,
+            Navigation,
+            Pagination,
+            Scrollbar,
+            A11y,
+            Autoplay,
+          ]}
+          navigation={true}
+          pagination={{ type: "fraction" }}
+          scrollbar={{ draggable: true }}
+          effect={"cards"}
+          onSlideChange={onChangeProjectData}
+        >
+          {listProject.map((item) => (
+            <SwiperSlide key={item.id}>
+              <img width={500} height={400} src={item.image} alt={item.name} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Container>
+    );
+  }
+
   if (typeCarrousel === TYPE_CARROUSEL.PROJECTS) {
     return (
       <Container>
@@ -83,13 +112,6 @@ const Carrousel = (props) => {
               <img width={500} height={400} src={ReactJS} alt="ntf" />
             </SwiperSlide>
           ))}
-          {/* <SwiperSlide></SwiperSlide>
-          <SwiperSlide>
-            <img width={500} height={400} src={ReactJS} alt="ntf" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img width={500} height={400} src={ReactJS} alt="ntf" />
-          </SwiperSlide> */}
         </Swiper>
       </Container>
     );

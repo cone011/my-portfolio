@@ -55,11 +55,17 @@ export const ROAD_MAP_ACADEMY = Object.freeze({
   name: "Road Academy",
 });
 
+export const TYPE_SHOW_TECH = Object.freeze({
+  CARROUSEL: "CARROUSEL",
+  ROW: "ROW",
+});
+
 export const MENU_ITEMS = [HOME, ABOUT_ME, TECHNOLOGY, ROAD_MAP_WORK];
 
 export const TYPE_CARROUSEL = Object.freeze({
   INITIAL: "INITIAL",
   PROJECTS: "PROJECTS",
+  TECHNOLOGY: "TECHNOLOGY",
 });
 
 export const ACADEMY_EXPERIENCE = [
