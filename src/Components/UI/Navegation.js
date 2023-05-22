@@ -48,7 +48,7 @@ const Section = styled.section`
 `;
 const NavBar = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 85%;
   height: ${(props) => props.theme.navHeight};

@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import { TYPE_SHOW_TECH } from "../utils/const";
+import { TECHNOLOGY, TYPE_SHOW_TECH } from "../utils/const";
 import { useState } from "react";
-import { BtnContainer } from "../../Styles/Banner";
 import TechnologiesCarrousel from "../TechnologiesCarrousel/TechnologiesCarrousel";
-import Technologies from "../TechnologiesRow/TechnologiesRow";
 import TechnologiesRow from "../TechnologiesRow/TechnologiesRow";
 
 const Technology = () => {
@@ -18,7 +16,7 @@ const Technology = () => {
   };
 
   return (
-    <Section>
+    <Section id={TECHNOLOGY.path}>
       {selectedType === TYPE_SHOW_TECH.CARROUSEL && <TechnologiesCarrousel />}
       {selectedType === TYPE_SHOW_TECH.ROW && <TechnologiesRow />}
       <ButtonContainer>
