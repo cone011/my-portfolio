@@ -10,7 +10,6 @@ import ScrollToTop from "./Components/UI/ScrollToTop";
 import AboutMe from "./Components/AboutMe";
 import { TYPE_ROAD_MAP } from "./Components/utils/const";
 import Projects from "./Components/Projects/Projects";
-import TechnologiesCarrousel from "./Components/TechnologiesCarrousel/TechnologiesCarrousel";
 import Technology from "./Components/Technology/Technology";
 function App() {
   return (

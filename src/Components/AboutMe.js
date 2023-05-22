@@ -15,12 +15,13 @@ const AboutMe = () => {
           </Suspense>
         </Box>
         <Box>
-          <Title>Bienvenido a mi portafolio</Title>
+          <Title>Welcome to my Portfolio</Title>
           <Text>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur
-            eveniet saepe in voluptate sit odio. Eligendi ipsa aspernatur
-            voluptatem nesciunt suscipit deleniti corporis! Voluptas numquam
-            veritatis commodi. Adipisci, ducimus voluptatum?
+            Let me introduce myslef, My Name is Juan Caimen Lorem ipsum dolor,
+            sit amet consectetur adipisicing elit. Aspernatur eveniet saepe in
+            voluptate sit odio. Eligendi ipsa aspernatur voluptatem nesciunt
+            suscipit deleniti corporis! Voluptas numquam veritatis commodi.
+            Adipisci, ducimus voluptatum?
           </Text>
         </Box>
       </Container>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Logo from "./Logo";
-import { MENU_ITEMS } from "../utils/const";
+import { MENU_ITEMS, NAVIGATION } from "../utils/const";
 import MenuItem from "./MenuItem";
 
 const Navegation = () => {
@@ -21,7 +21,7 @@ const Navegation = () => {
   };
 
   return (
-    <Section id="navigation">
+    <Section id={NAVIGATION.path}>
       <NavBar>
         <Logo />
         <HamburgerMenu

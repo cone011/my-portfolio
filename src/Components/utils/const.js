@@ -35,6 +35,11 @@ export const HOME = Object.freeze({
   name: "Home",
 });
 
+export const NAVIGATION = Object.freeze({
+  path: "navigation",
+  name: "Navigation",
+});
+
 export const ABOUT_ME = Object.freeze({
   path: "about",
   name: "About Me",

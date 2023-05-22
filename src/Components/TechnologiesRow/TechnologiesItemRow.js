@@ -16,7 +16,7 @@ const TechnologiesItemRow = (props) => {
       onMouseOver={(event) => pause(event)}
       onMouseOut={(event) => play(event)}
     >
-      <img width={500} height={400} src={img} />
+      <img width={500} height={400} src={img} alt={name} />
       <Details>
         <div>
           <span>{name}</span>
@@ -26,7 +26,7 @@ const TechnologiesItemRow = (props) => {
         <div>
           <span>Rating</span>
           <Rating>
-            <img width={200} height={200} src={RatingImg} />
+            <img width={200} height={200} src={RatingImg} alt="rating" />
             <h1>{Number(rating).toFixed(0)}</h1>
           </Rating>
         </div>
