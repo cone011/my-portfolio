@@ -12,7 +12,6 @@ import ReactJS from "../../Assets/Technologies/React.svg";
 import SocketIO from "../../Assets/Technologies/SocketIO.svg";
 import SQLServer from "../../Assets/Technologies/SQLServer.svg";
 import VBNet from "../../Assets/Technologies/Vbnet.svg";
-import PDF from "../../Assets/Juan_Caimen_Resume.pdf";
 
 export const SOCIAL_MEDIA = Object.freeze({
   FACEBOOK: "FACEBOOK",

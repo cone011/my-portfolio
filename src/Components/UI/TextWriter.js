@@ -6,39 +6,40 @@ import PDF from "../../Assets/Juan_Caimen_Resume.pdf";
 const TextWriter = () => {
   return (
     <div>
-      <Title>Welcome to my Portafolio</Title>
-      <Typewriter
-        options={{ autoStart: true, loop: true }}
-        onInit={(typewriter) => {
-          typewriter
-            .typeString(
-              `<span class="firstText">
-        Divertidos
-        </span>`
-            )
-            .pauseFor(500)
-            .deleteAll()
-            .typeString(
-              `<span class="secondText">
-            Increibles
+      <Title>
+        Welcome to my Portafolio
+        <Typewriter
+          options={{ autoStart: true, loop: true }}
+          onInit={(typewriter) => {
+            typewriter
+              .typeString(
+                `<span class="firstText">
+                I am Juan, Nice to meet you
+              </span>`
+              )
+              .pauseFor(500)
+              .deleteAll()
+              .typeString(
+                `<span class="secondText">
+              I am Fullstack Developer
             </span>`
-            )
-            .pauseFor(500)
-            .deleteAll()
-            .typeString(
-              `<span class="text-3">
-            Reutilizables
+              )
+              .pauseFor(500)
+              .deleteAll()
+              .typeString(
+                `<span class="thridText">
+              Please Take a look around
             </span>`
-            )
-            .pauseFor(500)
-            .deleteAll()
-            .start();
-        }}
-      />
-      <Title />
+              )
+              .pauseFor(500)
+              .deleteAll()
+              .start();
+          }}
+        />
+      </Title>
       <Text></Text>
       <ButtonContainer>
-        <a href={PDF} target="_blank">
+        <a href={PDF}>
           <Button text="Descarga mi CV" />
         </a>
       </ButtonContainer>
@@ -53,7 +54,8 @@ const Title = styled.h2`
   color: ${(props) => props.theme.text};
   align-self: flex-start;
   transition: all 0.5s ease-in-out;
-  span{
+  .span{
+    width:20%;
     text-transform: uppercase;
     font-family; "Akaya Telivigala";
     cursive;
@@ -65,7 +67,7 @@ const Title = styled.h2`
     color:orange;
   }
   .thridText{
-    color:red;
+    color:blue;
   }
   @media(max-width: 48em){
     align-self: center;
