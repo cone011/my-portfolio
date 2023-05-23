@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import Button from "./Button";
+import PDF from "../../Assets/Juan_Caimen_Resume.pdf";
 
 const TextWriter = () => {
   return (
     <div>
-      <Title>Portafolio</Title>
+      <Title>Welcome to my Portafolio</Title>
       <Typewriter
         options={{ autoStart: true, loop: true }}
         onInit={(typewriter) => {
@@ -35,9 +36,11 @@ const TextWriter = () => {
         }}
       />
       <Title />
-      <Text>React Portafolio</Text>
+      <Text></Text>
       <ButtonContainer>
-        <Button text="Descarga mi CV" />
+        <a href={PDF} target="_blank">
+          <Button text="Descarga mi CV" />
+        </a>
       </ButtonContainer>
     </div>
   );

@@ -15,13 +15,21 @@ const AboutMe = () => {
           </Suspense>
         </Box>
         <Box>
-          <Title>Welcome to my Portfolio</Title>
+          <Title>Who am I?</Title>
           <Text>
-            Let me introduce myslef, My Name is Juan Caimen Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Aspernatur eveniet saepe in
-            voluptate sit odio. Eligendi ipsa aspernatur voluptatem nesciunt
-            suscipit deleniti corporis! Voluptas numquam veritatis commodi.
-            Adipisci, ducimus voluptatum?
+            Welcome to my portfolio and nice too meet you. Please take a look
+            around. Let me introduce myself.
+          </Text>
+          <Text>
+            I'm Juan Caimen, a software engineer based in Asuncion, PY who's
+            experienced in taking fullstack applications from the scracth to
+            production
+          </Text>
+          <Text>
+            In all my experince doing applications a learn a lot and I hope some
+            of my knowledge could give you a hand. PD: Is there some advice that
+            can you give me or something you like, please reach me up and let me
+            know I'll be more than greatful
           </Text>
         </Box>
       </Container>
