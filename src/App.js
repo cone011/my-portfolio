@@ -22,7 +22,6 @@ function App() {
           <AboutMe />
           <RoadMap titleRoadMap={TYPE_ROAD_MAP.WORK_EXPERIENCE} />
           <Technology />
-          <RoadMap titleRoadMap={TYPE_ROAD_MAP.ACADEMY_EXPERIENCE} />
           <Projects />
           <Footer />
           <ScrollToTop />
