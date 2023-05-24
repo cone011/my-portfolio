@@ -34,10 +34,16 @@ const Projects = () => {
               Voluptas numquam veritatis commodi. Adipisci, ducimus voluptatum?
             </SubText>
             <SutTextLight>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae dolores quae excepturi labore asperiores animi quasi eos
-              reiciendis quidem maxime ipsa rerum beatae, soluta repudiandae
-              obcaecati voluptatum eligendi sint ea!
+              {currentValue.hasOwnProperty("frontEnd") && (
+                <a href={currentValue.frontEnd}>
+                  {`Front-End: ${currentValue.frontEnd}\n`}
+                </a>
+              )}
+              {currentValue.hasOwnProperty("backEnd") && (
+                <a href={currentValue.frontEnd}>
+                  {`Back-End: ${currentValue.backEnd}\n`}
+                </a>
+              )}
             </SutTextLight>
           </Suspense>
         </Box>

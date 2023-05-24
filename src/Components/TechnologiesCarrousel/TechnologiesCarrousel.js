@@ -27,17 +27,18 @@ const TechnologiesCarrousel = () => {
         <Box>
           <Suspense fallback={<Loading />}>
             <Title>{currentValue.name}</Title>
-            <SubText>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Aspernatur eveniet saepe in voluptate sit odio. Eligendi ipsa
-              aspernatur voluptatem nesciunt suscipit deleniti corporis!
-              Voluptas numquam veritatis commodi. Adipisci, ducimus voluptatum?
-            </SubText>
+            <SubText>Knowledge %</SubText>
             <SutTextLight>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Molestiae dolores quae excepturi labore asperiores animi quasi eos
-              reiciendis quidem maxime ipsa rerum beatae, soluta repudiandae
-              obcaecati voluptatum eligendi sint ea!
+              <Bar>
+                <BarItem
+                  style={{
+                    width: `${currentValue.rating}%`,
+                    backgroundColor: "#04AA6D",
+                  }}
+                >
+                  {`${currentValue.rating} %`}
+                </BarItem>
+              </Bar>
             </SutTextLight>
           </Suspense>
         </Box>
@@ -120,7 +121,7 @@ const SubText = styled.p`
   @media (max-width: 64em) {
     width: 100%;
     text-align: center;
-    font-size: ${(props) => props.theme.fontmd};
+    font-size: ${(props) => props.theme.fontxxl};
   }
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontmd};
@@ -128,6 +129,20 @@ const SubText = styled.p`
   @media (max-width: 30em) {
     font-size: ${(props) => props.theme.fontsm};
   }
+`;
+
+const Bar = styled.div`
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 4px;
+`;
+
+const BarItem = styled.div`
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 3px;
 `;
 
 const SutTextLight = styled.p`
