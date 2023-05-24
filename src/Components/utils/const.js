@@ -1,9 +1,16 @@
 import {
+  BACHELOR_NACIONAL,
+  DIPLOMA_SCHOOL,
+  POSGRADUATE_NACIONAL,
+} from "./AcademyExperience";
+
+import {
   FAKE_ECOMMERCE,
   POKEMON_APP,
   PORTFOLIO,
   RETROSPECTIVE,
 } from "./Projects";
+
 import {
   NODEJS,
   REACTJS,
@@ -20,6 +27,13 @@ import {
   DOCKER,
   VBNET,
 } from "./Technologies";
+
+import {
+  INFOZOOM,
+  INFOZOOMJR,
+  KEMSA,
+  PYCOMUNICACIONES,
+} from "./WorkExperience";
 
 export const SOCIAL_MEDIA = Object.freeze({
   FACEBOOK: "FACEBOOK",
@@ -82,38 +96,12 @@ export const TYPE_CARROUSEL = Object.freeze({
 });
 
 export const ACADEMY_EXPERIENCE = [
-  Object.freeze({
-    name: "Posgraduate course Software Engineer 2021 - Present",
-    institucion: "Universidad Nacional de Asuncion",
-  }),
-  Object.freeze({
-    name: "Bachelor Degree 2013 - 2018",
-    institucion: "Universidad Nacional de Asuncion",
-  }),
-  Object.freeze({
-    name: "Collage Diploma 2000-2011",
-    institucion: "Colegio Campoalto",
-  }),
+  POSGRADUATE_NACIONAL,
+  BACHELOR_NACIONAL,
+  DIPLOMA_SCHOOL,
 ];
 
-export const WORK_EXPERIENCE = [
-  Object.freeze({
-    companyName: "Py Comunicaciones 2022 - present",
-    role: "Full Stack Developer / Data Analyst",
-  }),
-  Object.freeze({
-    companyName: "INFOZOOM S.R.L.  2019 - 2022",
-    role: "Full Staock Developer",
-  }),
-  Object.freeze({
-    companyName: "KEMSA CISA 2018 - 2019",
-    role: "Developer",
-  }),
-  Object.freeze({
-    companyName: "INFOZOOM S.A. 2013-2017",
-    role: "Junior Developer / IT Support",
-  }),
-];
+export const WORK_EXPERIENCE = [PYCOMUNICACIONES, INFOZOOM, KEMSA, INFOZOOMJR];
 
 export const TECH_EXPERIENCE = [
   REACTJS,
