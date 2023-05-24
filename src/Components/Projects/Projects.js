@@ -27,12 +27,8 @@ const Projects = () => {
         <Box>
           <Suspense fallback={<Loading />}>
             <Title>{currentValue.name}</Title>
-            <SubText>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Aspernatur eveniet saepe in voluptate sit odio. Eligendi ipsa
-              aspernatur voluptatem nesciunt suscipit deleniti corporis!
-              Voluptas numquam veritatis commodi. Adipisci, ducimus voluptatum?
-            </SubText>
+            <SubText>A Description of the project</SubText>
+            <SubText>{`Technologies: ${currentValue.technology}`}</SubText>
             <SutTextLight>
               {currentValue.hasOwnProperty("frontEnd") && (
                 <a href={currentValue.frontEnd}>
