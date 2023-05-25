@@ -15,7 +15,6 @@ import "swiper/css/pagination";
 import "swiper/css/effect-cards";
 
 import Javascript from "../../../Assets/Technologies/JavaScript.svg";
-import ReactJS from "../../../Assets/Technologies/React.svg";
 import { TYPE_CARROUSEL } from "../../utils/const";
 
 const Carrousel = (props) => {
@@ -109,7 +108,7 @@ const Carrousel = (props) => {
         >
           {listProject.map((item) => (
             <SwiperSlide key={item.id}>
-              <img width={500} height={400} src={ReactJS} alt="ntf" />
+              <img width={500} height={400} src={item.image} alt="ntf" />
             </SwiperSlide>
           ))}
         </Swiper>

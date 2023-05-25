@@ -27,7 +27,7 @@ const Projects = () => {
         <Box>
           <Suspense fallback={<Loading />}>
             <Title>{currentValue.name}</Title>
-            <SubText>A Description of the project</SubText>
+            <SubText>{currentValue.description}</SubText>
             <SubText>{`Technologies: ${currentValue.technology}`}</SubText>
             <SutTextLight>
               {currentValue.hasOwnProperty("frontEnd") && (
