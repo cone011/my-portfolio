@@ -17,3 +17,8 @@ export const TWITTER = Object.freeze({
   name: "TWITTER",
   link: "https://twitter.com/coneIlManco",
 });
+
+export const GITHUB = Object.freeze({
+  name: "GITHUB",
+  link: "https://github.com/cone011",
+});

@@ -65,6 +65,11 @@ export const TECHNOLOGY = Object.freeze({
   name: "Technology",
 });
 
+export const PROJECTS = Object.freeze({
+  path: "projects",
+  name: "Projects",
+});
+
 export const ROAD_MAP_WORK = Object.freeze({
   path: "roadWork",
   name: "Road Work",
@@ -80,7 +85,7 @@ export const TYPE_SHOW_TECH = Object.freeze({
   ROW: "ROW",
 });
 
-export const MENU_ITEMS = [HOME, ABOUT_ME, TECHNOLOGY, ROAD_MAP_WORK];
+export const MENU_ITEMS = [HOME, ABOUT_ME, ROAD_MAP_WORK, TECHNOLOGY, PROJECTS];
 
 export const TYPE_CARROUSEL = Object.freeze({
   INITIAL: "INITIAL",

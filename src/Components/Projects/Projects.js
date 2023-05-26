@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { lazy, Suspense, useState } from "react";
 import Loading from "../UI/Loading";
-import { TYPE_CARROUSEL, PROJECTS_LIST } from "../utils/const";
+import { TYPE_CARROUSEL, PROJECTS_LIST, PROJECTS } from "../utils/const";
 
 const Carrousel = lazy(() => import("../UI/Carrousel/Carrousel"));
 
@@ -13,7 +13,7 @@ const Projects = () => {
   };
 
   return (
-    <Section id="projects">
+    <Section id={PROJECTS.path}>
       <Container>
         <Box>
           <Suspense fallback={<Loading />}>
