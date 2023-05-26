@@ -29,8 +29,9 @@ const Navegation = () => {
           onClick={() => setIsClick(!isClick)}
         ></HamburgerMenu>
         <Menu click={isClick}>
-          {MENU_ITEMS.map((item) => (
+          {MENU_ITEMS.map((item, index) => (
             <MenuItem
+              key={index}
               path={item.path}
               name={item.name}
               onReturn={onReturnMenuNavigation}

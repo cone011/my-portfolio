@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import Logo from "./Logo";
 import SocialMedia from "../../Components/Icons/SocialMedia";
 import Banner from "./Banner";
-import { SOCIAL_MEDIA } from "../utils/const";
+import { FACEBOOK, LINKEDIN, TWITTER } from "../utils/SocialMedias";
 
 const Footer = () => {
   const scrollTo = (id) => {
@@ -21,13 +20,13 @@ const Footer = () => {
         <Left>
           <IconList>
             <a href="#" target="_blank">
-              <SocialMedia typeIcon={SOCIAL_MEDIA.FACEBOOK} />
+              <SocialMedia typeIcon={FACEBOOK.name} />
             </a>
-            <a href="#" target="_blank">
-              <SocialMedia typeIcon={SOCIAL_MEDIA.TWITTER} />
+            <a href={TWITTER.link} target="_blank" rel="noreferrer">
+              <SocialMedia typeIcon={TWITTER.name} />
             </a>
-            <a href="#" target="_blank">
-              <SocialMedia typeIcon={SOCIAL_MEDIA.LINKEDIN} />
+            <a href={LINKEDIN.link} target="_blank" rel="noreferrer">
+              <SocialMedia typeIcon={LINKEDIN.name} />
             </a>
           </IconList>
         </Left>

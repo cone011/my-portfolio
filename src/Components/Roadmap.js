@@ -20,8 +20,12 @@ const RoadMap = (props) => {
             <DrawSvg />
           </SvgContainer>
           <Items>
-            {WORK_EXPERIENCE.map((item) => (
-              <RoadMapItem title={item.companyName} text={item.role} />
+            {WORK_EXPERIENCE.map((item, index) => (
+              <RoadMapItem
+                key={index}
+                title={item.companyName}
+                text={item.role}
+              />
             ))}
           </Items>
         </Container>
@@ -38,8 +42,12 @@ const RoadMap = (props) => {
             <DrawSvg />
           </SvgContainer>
           <Items>
-            {ACADEMY_EXPERIENCE.map((item) => (
-              <RoadMapItem title={item.name} text={item.institucion} />
+            {ACADEMY_EXPERIENCE.map((item, index) => (
+              <RoadMapItem
+                key={index}
+                title={item.name}
+                text={item.institucion}
+              />
             ))}
           </Items>
         </Container>

@@ -35,13 +35,6 @@ import {
   PYCOMUNICACIONES,
 } from "./WorkExperience";
 
-export const SOCIAL_MEDIA = Object.freeze({
-  FACEBOOK: "FACEBOOK",
-  INSTRAGRAM: "INSTAGRAM",
-  LINKEDIN: "LINKEDIN",
-  TWITTER: "TWITTER",
-});
-
 export const TYPE_ROAD_MAP = Object.freeze({
   WORK_EXPERIENCE: "Work Experience",
   ACADEMY_EXPERIENCE: "Academy Experience",

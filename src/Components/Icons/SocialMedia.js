@@ -1,9 +1,9 @@
-import { SOCIAL_MEDIA } from "../utils/const";
+import { FACEBOOK, INSTAGRAM, LINKEDIN, TWITTER } from "../utils/SocialMedias";
 
 const SocialMedia = (props) => {
   const { typeIcon, width, height } = props;
 
-  if (typeIcon === SOCIAL_MEDIA.FACEBOOK) {
+  if (typeIcon === FACEBOOK.name) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ const SocialMedia = (props) => {
     );
   }
 
-  if (typeIcon === SOCIAL_MEDIA.INSTRAGRAM) {
+  if (typeIcon === INSTAGRAM.name) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const SocialMedia = (props) => {
     );
   }
 
-  if (typeIcon === SOCIAL_MEDIA.TWITTER) {
+  if (typeIcon === TWITTER.name) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const SocialMedia = (props) => {
     );
   }
 
-  if (typeIcon === SOCIAL_MEDIA.LINKEDIN) {
+  if (typeIcon === LINKEDIN.name) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"

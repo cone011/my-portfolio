@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import Button from "./Button";
 import PDF from "../../Assets/Juan_Caimen_Resume.pdf";
+import { Link } from "react-router-dom";
 
 const TextWriter = () => {
   return (
@@ -39,9 +40,14 @@ const TextWriter = () => {
       </Title>
       <Text></Text>
       <ButtonContainer>
-        <a href={PDF}>
-          <Button text="Descarga mi CV" />
-        </a>
+        <Link
+          to={PDF}
+          download="Juan_Caimen_Resume"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button text="Download my Resume" />
+        </Link>
       </ButtonContainer>
     </div>
   );
