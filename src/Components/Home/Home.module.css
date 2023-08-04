@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 70%;
+}

@@ -1,0 +1,13 @@
+.projectTags {
+  display: flex;
+  max-width: 60%;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  background-color: aquamarine;
+  border-radius: 4px;
+  margin-right: 0.3rem;
+  margin-bottom: 0.25rem;
+}

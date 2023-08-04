@@ -1,0 +1,49 @@
+.projectCard {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+.projectInfo {
+  margin-right: 1.5rem;
+}
+
+.projectTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.projectLinks {
+  margin-top: 0.3rem;
+  display: flex;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 1rem;
+  margin-right: 0.3rem;
+}
+
+.linkButton i {
+  display: flex;
+  align-items: center;
+  mask-repeat: 4px;
+}
+
+.projectPhoto {
+  width: 40%;
+}

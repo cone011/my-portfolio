@@ -1,0 +1,10 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skillsTitle {
+  font-size: 2rem;
+  font-weight: 700;
+}

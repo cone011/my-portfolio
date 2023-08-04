@@ -1,0 +1,42 @@
+.about {
+  padding-bottom: 3rem;
+}
+
+.aboutTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aboutInfo {
+  font-size: 1.5rem;
+}
+
+.picture {
+  height: 420px;
+}
+
+.infoName {
+  color: blue;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .aboutTop {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutInfo {
+    font-size: 1.25rem;
+  }
+
+  .picture {
+    height: 280px;
+  }
+
+  .infoName {
+    font-size: 1.6rem;
+  }
+}
