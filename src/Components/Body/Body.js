@@ -1,4 +1,5 @@
 import AboutMe from "../AboutMe/AboutMe";
+import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import ListSkill from "../Skills/ListSkill/ListSkill";
 import classes from "./Body.module.css";
@@ -14,6 +15,9 @@ const Body = () => {
       </section>
       <section id="skills">
         <ListSkill />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </div>
   );
