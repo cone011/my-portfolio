@@ -1,0 +1,19 @@
+.certificates {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.certificatesTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.certificatesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}

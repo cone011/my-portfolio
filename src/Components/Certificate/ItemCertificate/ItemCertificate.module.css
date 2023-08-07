@@ -1,0 +1,29 @@
+.certificationCard {
+  padding: 0.5rem;
+  width: 45%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.certificationLogo {
+  height: 80px; /*´PONER EN VH*/
+}
+
+.certificationInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.certificationDescription {
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 80%;
+}

@@ -1,4 +1,5 @@
 import AboutMe from "../AboutMe/AboutMe";
+import ListCertificate from "../Certificate/ListCertificate/ListCertificate";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import ListSkill from "../Skills/ListSkill/ListSkill";
@@ -15,6 +16,9 @@ const Body = () => {
       </section>
       <section id="skills">
         <ListSkill />
+      </section>
+      <section id="certification">
+        <ListCertificate />
       </section>
       <section id="contact">
         <Contact />
