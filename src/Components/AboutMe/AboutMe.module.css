@@ -21,11 +21,40 @@
   font-size: 2rem;
 }
 
+.buttonCv {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.buttonCv button {
+  text-decoration: none;
+  background-color: rgb(48, 46, 194);
+  color: white;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgb(48, 46, 194);
+  cursor: pointer;
+}
+
+.buttonCv button:hover,
+.buttonCv button:active {
+  background-color: rgb(86, 84, 236);
+  border-color: rgb(86, 84, 236);
+}
+
+.buttonCv i {
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 720px) {
   .aboutTop {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 1rem;
+    margin-top: 2rem;
   }
 
   .aboutInfo {

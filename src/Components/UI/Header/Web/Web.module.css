@@ -1,0 +1,35 @@
+.web {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.webOption {
+  font-size: 20px;
+  margin-right: 16px;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.webOption a {
+  text-decoration: none;
+  color: blue;
+  display: flex;
+  align-items: center;
+  border: 3px solid transparent;
+}
+
+.webOption a:hover,
+.webOption a:active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.optionIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.webOption:last-child {
+  margin-right: 0px;
+}

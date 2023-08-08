@@ -2,25 +2,27 @@ import Facebook from "../Components/assets/Icons/facebook.png";
 import Github from "../Components/assets/Icons/github.png";
 import Twitter from "../Components/assets/Icons/twitter.png";
 import Linkedin from "../Components/assets/Icons/linkedin.png";
+import POKEMONAPP from "../Components/assets/Projects/pokedex.png";
+import PORTFOLIO from "../Components/assets/Projects/Portofolio.jpg";
 
 export const SocialData = [
   Object.freeze({
     id: 0,
     platform: "Github",
     icon: Github,
-    link: "https://github.com/ThantZinPhyo-Slark",
+    link: "https://github.com/cone011",
   }),
   Object.freeze({
     id: 1,
     platform: "Linkedin",
     icon: Linkedin,
-    link: "https://www.linkedin.com/in/thantzinphyo11/",
+    link: "https://www.linkedin.com/in/juan-caimen-64b6a7173",
   }),
   Object.freeze({
     id: 2,
     platform: "Twitter",
     icon: Twitter,
-    link: "https://twitter.com/ThantZinPhyoSLK",
+    link: "https://twitter.com/coneIlManco",
   }),
   Object.freeze({
     id: 3,
@@ -33,37 +35,87 @@ export const SocialData = [
 export const ProjectList = [
   Object.freeze({
     id: 0,
-    title: "Application Web Design",
-    about:
-      " MyPay Application Landing Page Design Using ( React.Js ), Mypay App is Protected By Our Technical & Ethical Security Procedures.It is an Independent Payment System With Absolutely No Other Influence.",
-    tags: ["ReactJS", "Application Web Design", "Payment", "Web Development"],
+    title: "Pokemon App",
+    about: `
+      This project is base on the pokemon api.
+      A brief explanation about this project and How I made it. 
+      First of all is made it with React JS, JavaScript and for the style I use CSS but with Modules Stylesheet
+      I'll leave my Github repository if you like feel to used it or take a look around. Also I attached a Dockerfile if you wanna use a container
+      and in my repository there is a link to vercel service`,
+    tags: ["ReactJS", "Application Web Design", "API", "Web Development"],
     demo: "https://github.com/ThantZinPhyo-Slark/Application-Web-Design",
-    github: "https://github.com/ThantZinPhyo-Slark/Application-Web-Design",
-    image:
-      "https://github.com/ThantZinPhyo-Slark/Application-Web-Design/raw/main/home.png",
+    frontEnd: "https://github.com/cone011/pokemon-app",
+    image: POKEMONAPP,
   }),
   Object.freeze({
     id: 1,
-    title: "Google IT Support",
-    about:
-      " If you go to work regularly, you will get a certificate from Google in more than 2 months. In the Github link, included the answers to the questions in the Google IT Support Course, as well as everything from the Financial Aid Letter to the final CV writing.",
-    tags: ["Window", "Linux", "Digital Dark Art", "Networking", "Hardware"],
+    title: "Ecommerce Fake",
+    about: `A brief introduction of this project I'll attached two links, the first one is the ForntEnd and the second one is the BackEnd.
+    I'll start with the Back-end, for made this part I use Node JS, for validation I use ExpressJS, also JsonWebToken for the User Authentication.
+    As my Database I use a NoSQL Database which is MongoDB and the pattern design I use is it MVC(Model-View-Controller).
+    The front-end I use React JS, Javascript and for the style I use CSS but with Modules Stylesheet
+    And for the products I use the mercado libre API, and some features like the payment and the card.`,
+    tags: [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "API",
+      "Web Development",
+      "NodeJS",
+      "ExpressJS",
+      "JWT",
+      "MVC",
+      "MongoDB",
+      "Docker",
+    ],
     demo: "https://github.com/ThantZinPhyo-Slark/Google-IT-Support-Professional",
-    github:
-      "https://github.com/ThantZinPhyo-Slark/Google-IT-Support-Professional",
-    image:
-      "https://github.com/ThantZinPhyo-Slark/Google-IT-Support-Professional/raw/main/Certificate.jpg",
+    frontEnd: "https://github.com/cone011/producto-front-end",
+    backEnd: "https://github.com/cone011/producto-backend",
+    image: PORTFOLIO,
   }),
   Object.freeze({
     id: 2,
-    title: "Always Illest",
-    about:
-      " This is a ramdom project I am using Website Design HTML ,CSS, SCSS & JavaScript Responsive AI Esport Page , It is Not Official Website.",
-    tags: ["ReactJS", "HTML", "SCSS", "JavaScript", "AI Esport"],
+    title: "Retrospective App",
+    about: `This project is base one a Sprint application\n
+    For this project like the last one I also attached two links, the first one is the FrontEnd and the second one is the BackEnd.
+    I'll go with the back first, I made it with Node JS, for validation ExpressJS, for the User Authentication I use JsonWebToken
+    for the database I use a NoSQL Database which is MongoDB and a additional I use SokcetIO for some controllers
+    and the pattern design I use is it MVC(Model-View-Controller).
+    For the FrontEnd I use ReactJS, JavaScript and for the style I use CSS but with Modules Stylesheet
+    Also the front have Auth and SignUp and search data.
+    An Observation I'll attached in both the back and front a Dockerfile if you wanna use it in a cointaner`,
+    tags: [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "Application Web Design",
+      "API",
+      "Web Development",
+      "NodeJS",
+      "ExpressJS",
+      "JWT",
+      "MVC",
+      "MongoDB",
+      "Docker",
+      "Socket.IO",
+    ],
+    demo: "https://github.com/ThantZinPhyo-Slark/always-illest",
+    frontEnd: "https://github.com/cone011/retrospective-front",
+    backEnd: "https://github.com/cone011/retrospective-back",
+    image: PORTFOLIO,
+  }),
+  Object.freeze({
+    id: 3,
+    title: "Retrospective App",
+    about: `This project as you can see is my current portfolio.
+    A brief explanation about this project.
+    Which is made it with React JS, JavaScript and in this case for the style I use styled components
+    I'll leave my Github repository if you like feel to used it or take a look around. Also I attached a Dockerfile if you wanna use a container`,
+    tags: ["ReactJS", "HTML", "CSS", "Web Development", "Socket.IO"],
     demo: "https://github.com/ThantZinPhyo-Slark/always-illest",
     github: "https://github.com/ThantZinPhyo-Slark/always-illest",
-    image:
-      "https://github.com/ThantZinPhyo-Slark/always-illest/raw/main/preview.png",
+    frontEnd: "https://github.com/cone011/my-portfolio",
+    image: PORTFOLIO,
   }),
 ];
 
@@ -75,6 +127,11 @@ export const SkillsData = [
       {
         name: "ReactJS",
         icon: <i class="devicon-react-original colored"></i>,
+      },
+      { name: "Redux", icon: <i class="devicon-redux-original colored"></i> },
+      {
+        name: "Next.JS",
+        icon: <i class="devicon-nextjs-original colored"></i>,
       },
       {
         name: "HTML5",
@@ -88,20 +145,38 @@ export const SkillsData = [
         name: "JavaScript",
         icon: <i class="devicon-javascript-plain colored"></i>,
       },
+      { name: "Node Js", icon: <i class="devicon-nodejs-plain colored"></i> },
       {
-        name: "Tailwind",
-        icon: <i class="devicon-tailwindcss-plain colored"></i>,
+        name: "Express JS",
+        icon: <i class="devicon-express-original colored"></i>,
+      },
+      {
+        name: "Socket.io",
+        icon: <i class="devicon-socketio-original colored"></i>,
+      },
+      {
+        name: "React Native",
+        icon: <i class="devicon-android-plain colored"></i>,
+      },
+      { name: "C#", icon: <i class="devicon-csharp-plain colored"></i> },
+    ],
+  }),
+  Object.freeze({
+    id: 1,
+    type: "Database",
+    list: [
+      { name: "Mongo DB", icon: <i class="devicon-mongodb-plain colored"></i> },
+      { name: "MySQL", icon: <i class="devicon-mysql-plain colored"></i> },
+      {
+        name: "SQL Server",
+        icon: <i class="devicon-microsoftsqlserver-plain-wordmark"></i>,
       },
     ],
   }),
   Object.freeze({
-    id: 0,
+    id: 2,
     type: "Cloud & Linux",
     list: [
-      {
-        name: "Azure",
-        icon: <i class="devicon-azure-plain colored"></i>,
-      },
       {
         name: "Docker",
         icon: <i class="devicon-docker-plain colored"></i>,
@@ -125,42 +200,73 @@ export const SkillsData = [
 export const CertificateData = [
   Object.freeze({
     id: 0,
-    company: "Google IT Support Certificate",
-    designation: "Google IT Support",
-    dateJoining: "2022",
-    dateEnd: "2023",
+    name: "React Complete Course",
+    type: "Web Development/Front-End",
     companyLogo:
       "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
-    work: "I am proficient in hardware and software troubleshooting , knowledge of operating systems, networking concepts, experience in providing excellent customer service.",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-cc8bcddd-c106-4af8-9954-c0af6252cd41.jpg?v=1662604391000",
   }),
   Object.freeze({
     id: 1,
-    company: "Microsoft Certified: Azure Fundamentals",
-    designation: "AZ-900",
-    dateJoining: "2022",
-    dateEnd: "2023",
+    name: "NodeJS Complete Course",
+    type: "Web Development/Back-End",
     companyLogo:
       "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
-    work: "I have solid understanding of cloud computing principles and best practices.Familiarity with Azure services such as virtual machines, storage, and networking..",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-c9a79c10-593f-4dc8-a814-5ae33d203b1a.jpg?v=1661003518000",
   }),
   Object.freeze({
     id: 2,
-    company: "Security Operations Analyst",
-    designation: "SC-200",
-    dateJoining: "2022",
-    dateEnd: "2023",
+    name: "JavaScript Algorithms and Data Structures",
+    type: "Programming",
     companyLogo:
       "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
-    work: "I proficient in security operations and incident response and experience with threat intelligence and security monitoring using Microsoft security technologies.I have knowledge of governance, risk, and compliance frameworks and practices.",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-66f45c5c-c791-40f2-82da-0a42f4d278cf.jpg?v=1680654132000",
   }),
   Object.freeze({
     id: 3,
-    company: "Azure Administrator Associate",
-    designation: "AZ-104",
-    dateJoining: "2022",
-    dateEnd: "2023",
+    name: "React Native and Redux Course using hooks",
+    type: "Mobile",
     companyLogo:
       "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
-    work: "I have proficient in managing and maintaining Azure infrastructure and services also experience with Azure virtual machines, storage, networking, and security.I have knowledge of Azure identity and access management, monitoring, and governance.",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-f7f9539e-767c-455c-8a83-8596115415eb.jpg?v=1666098400000",
+  }),
+  Object.freeze({
+    id: 4,
+    name: "MongoDB - The Complete Developer Guide",
+    type: "DataBase",
+    companyLogo:
+      "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
+    link: "https://udemy-certificate.s3.amazonaws.com/image/UC-17ad005c-62d8-4e09-8792-69291ed5a0c3.jpg?v=1685759520000",
+  }),
+];
+
+export const WorkExpirience = [
+  Object.freeze({
+    id: 0,
+    companyName: "Py Comunicaciones",
+    role: "Full Stack Developer / Data Analyst",
+    date: "May 2022 - present",
+    idCss: "notpair",
+  }),
+  Object.freeze({
+    id: 1,
+    companyName: "INFOZOOM S.R.L.",
+    role: "Full Stack Developer",
+    date: "Fer 2019 - May 2022",
+    idCss: "pair",
+  }),
+  Object.freeze({
+    id: 2,
+    companyName: "KEMSA CISA",
+    role: "Developer",
+    date: "Fer 2018 - Fer 2019",
+    idCss: "notpair",
+  }),
+  Object.freeze({
+    id: 3,
+    companyName: "INFOZOOM S.A.",
+    role: "Junior Developer / IT Support",
+    date: "Dic 2013- Fer 2017",
+    idCss: "pair",
   }),
 ];

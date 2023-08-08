@@ -18,6 +18,10 @@
   flex-direction: column;
 }
 
+.certificationInfo label {
+  font-weight: bold;
+}
+
 .certificationDescription {
   text-align: left;
   display: -webkit-box;
@@ -26,4 +30,39 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 80%;
+}
+
+.certificateLink {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.certificateLink a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(116, 211, 240);
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-family: 1rem;
+  margin-right: 0.3rem;
+}
+
+.linkButton i {
+  display: flex;
+  align-items: center;
+  mask-repeat: 4px;
+}
+
+@media only screen and (max-width: 720px) {
+  .certificationCard {
+    width: 100%;
+    padding: 1rem;
+  }
 }

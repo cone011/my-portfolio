@@ -1,4 +1,3 @@
-import Container from "../../UI/Container/Container";
 import Separator from "../../UI/Separator/Separator";
 import classes from "./ListSkill.module.css";
 import { SkillsData } from "../../../Utils/const";
@@ -9,11 +8,9 @@ const ListSkill = () => {
     <div className={classes.skills}>
       <Separator />
       <label className={classes.skillsTitle}>Skills</label>
-      <Container>
-        {SkillsData.map((item) => (
-          <SkillItem item={item} key={item.id} />
-        ))}
-      </Container>
+      {SkillsData.map((item) => (
+        <SkillItem item={item} key={item.id} />
+      ))}
     </div>
   );
 };

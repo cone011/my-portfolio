@@ -1,8 +1,9 @@
 import AboutMe from "../AboutMe/AboutMe";
 import ListCertificate from "../Certificate/ListCertificate/ListCertificate";
 import Contact from "../Contact/Contact";
-import Projects from "../Projects/Projects";
+import ListProject from "../Projects/ListProjects/ListProjects";
 import ListSkill from "../Skills/ListSkill/ListSkill";
+import ListWork from "../Work/ListWork/ListWork";
 import classes from "./Body.module.css";
 
 const Body = () => {
@@ -12,13 +13,16 @@ const Body = () => {
         <AboutMe />
       </section>
       <section id="projects">
-        <Projects />
+        <ListProject />
       </section>
       <section id="skills">
         <ListSkill />
       </section>
       <section id="certification">
         <ListCertificate />
+      </section>
+      <section id="work">
+        <ListWork />
       </section>
       <section id="contact">
         <Contact />
