@@ -15,13 +15,15 @@ const ItemCertificate = (props) => {
         <div className={classes.certificationDescription}>
           <p>{item.type}</p>
         </div>
-        <div className={classes.certificateLink}>
-          <a href={item.link}>
-            <div className={classes.linkButton}>
-              <i class="fi fi-rr-book-alt"></i> Diploma
-            </div>
-          </a>
-        </div>
+        {item.link && (
+          <div className={classes.certificateLink}>
+            <a href={item.link}>
+              <div className={classes.linkButton}>
+                <i class="fi fi-rr-book-alt"></i> Diploma
+              </div>
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

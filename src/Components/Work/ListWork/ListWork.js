@@ -1,4 +1,4 @@
-import { WorkExpirience } from "../../../Utils/const";
+import { WokrExpirience } from "../../../Utils/const";
 import Separator from "../../UI/Separator/Separator";
 import ItemWork from "../ItemWork/ItemWork";
 import classes from "./ListWork.module.css";
@@ -7,9 +7,9 @@ const ListWork = () => {
   return (
     <div className={classes.works}>
       <Separator />
-      <label className={classes.workTitle}>Work Experience</label>
+      <label className={classes.workTitle}>Road Work</label>
       <div className={classes.vertical} />
-      {WorkExpirience.map((item) => (
+      {WokrExpirience.map((item) => (
         <ItemWork item={item} key={item.id} />
       ))}
     </div>

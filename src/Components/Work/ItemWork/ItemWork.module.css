@@ -1,62 +1,63 @@
 .workContainer {
   font-size: 1.2rem;
+  margin: 3rem;
 }
 
 .workContainer:first-of-type {
-  margin-top: 4rem;
+  margin-top: 6rem;
 }
 
-.workData {
+.workInfo {
   text-align: right;
   padding: 0.9rem;
   display: inline-block;
   vertical-align: middle;
-  width: 30%;
-  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 30%;
 }
 
-.workData:last-of-type {
-  margin-bottom: 1rem;
-}
-
-.workDataTitle {
-  margin: 1rem;
-  font-size: 2rem;
-}
-
-.workDataRole {
-  margin: 0;
-  font-size: 1.1rem;
+.workInfo:last-of-type {
+  margin-bottom: 1.5rem;
 }
 
 #pairContainer {
   text-align: right;
 }
 
-#pairWorkData {
+#pairInfo {
   text-align: left;
 }
 
+.workTitle {
+  margin: 0.2rem;
+  font-size: 2rem;
+}
+
+.workDate {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 @media only screen and (max-width: 720px) {
-  .workDataTitle {
-    margin: 0.2rem;
-    font-size: 1.1rem;
+  .workContainer {
+    font-size: 1rem;
   }
 
-  .workData {
-    font-size: 0.8rem;
-    margin-left: 0.7rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  .workInfo {
+    width: 38vw;
+    margin-left: -2.2rem;
   }
 
-  .workDataRole {
-    margin: 0;
+  #pairInfo {
+    margin-right: -2.5rem;
+  }
+
+  .workTitle {
+    font-size: 1rem;
+  }
+
+  .workDate {
     font-size: 0.9rem;
-  }
-
-  #pairWorkData {
-    margin-right: 0.7rem;
   }
 }

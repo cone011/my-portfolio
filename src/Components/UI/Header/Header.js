@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import classes from "./Header.module.css";
 import Web from "./Web/Web";
 import Mobile from "./Mobile/Mobile";
@@ -18,8 +18,8 @@ const Header = () => {
           <Web />
         </div>
         <div className={classes.mobileMenu}>
-          <div onClick={onOpenMovilHandler}>
-            <i class="fi-rr-apps menu-icon"></i>
+          <div onClick={onOpenMovilHandler} className={classes.menuIcon}>
+            <i class="fi-rr-apps menu-icon" />
           </div>
           {isOpen && <Mobile onHandler={onOpenMovilHandler} />}
         </div>

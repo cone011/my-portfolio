@@ -18,8 +18,13 @@ const Mobile = (props) => {
         </a>
       </div>
       <div className={classes.mobileOption}>
+        <a href="#certification" onClick={onHandler}>
+          <i class="fi fi-rr-book-alt"></i> Certifications
+        </a>
+      </div>
+      <div className={classes.mobileOption}>
         <a href="#work" onClick={onHandler}>
-          <i class="fi-rr-briefcase option-icon"></i>Certifications
+          <i class="fi-rr-briefcase option-icon"></i>Work
         </a>
       </div>
       <div className={classes.mobileOption}>

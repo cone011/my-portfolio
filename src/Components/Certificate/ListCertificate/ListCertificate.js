@@ -8,7 +8,7 @@ const ListCertificate = () => {
   return (
     <Container customCSS={classes.certificates}>
       <Separator />
-      <label className={classes.certificatesTitle}>Certificate</label>
+      <label className={classes.certificatesTitle}>Certificate & Studies</label>
       <div className={classes.certificatesList}>
         {CertificateData.map((item) => (
           <ItemCertificate item={item} key={item.id} />

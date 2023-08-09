@@ -2,8 +2,12 @@ import Facebook from "../Components/assets/Icons/facebook.png";
 import Github from "../Components/assets/Icons/github.png";
 import Twitter from "../Components/assets/Icons/twitter.png";
 import Linkedin from "../Components/assets/Icons/linkedin.png";
+import Discord from "../Components/assets/Icons/discord.png";
 import POKEMONAPP from "../Components/assets/Projects/pokedex.png";
 import PORTFOLIO from "../Components/assets/Projects/Portofolio.jpg";
+import CERTIFICATE from "../Components/assets/Make It Real - Bootcamp Desarrollo Web Full Stack - Juan Jose Caimen Cespedes.pdf";
+import RETRO from "../Components/assets/Projects/RetrospectiveData.png";
+import FAKECOMMER from "../Components/assets/Projects/Fakecommer.png";
 
 export const SocialData = [
   Object.freeze({
@@ -28,7 +32,13 @@ export const SocialData = [
     id: 3,
     platform: "Facebook",
     icon: Facebook,
-    link: "https://www.facebook.com/thantzin.phyo.18",
+    link: "https://www.facebook.com/juan.caimen",
+  }),
+  Object.freeze({
+    id: 4,
+    plataform: "Discord",
+    icon: Discord,
+    link: "https://discordapp.com/users/cone#2775",
   }),
 ];
 
@@ -68,10 +78,9 @@ export const ProjectList = [
       "MongoDB",
       "Docker",
     ],
-    demo: "https://github.com/ThantZinPhyo-Slark/Google-IT-Support-Professional",
     frontEnd: "https://github.com/cone011/producto-front-end",
     backEnd: "https://github.com/cone011/producto-backend",
-    image: PORTFOLIO,
+    image: FAKECOMMER,
   }),
   Object.freeze({
     id: 2,
@@ -80,7 +89,7 @@ export const ProjectList = [
     For this project like the last one I also attached two links, the first one is the FrontEnd and the second one is the BackEnd.
     I'll go with the back first, I made it with Node JS, for validation ExpressJS, for the User Authentication I use JsonWebToken
     for the database I use a NoSQL Database which is MongoDB and a additional I use SokcetIO for some controllers
-    and the pattern design I use is it MVC(Model-View-Controller).
+    and the pattern design I use is it MVC (Model-View-Controller).
     For the FrontEnd I use ReactJS, JavaScript and for the style I use CSS but with Modules Stylesheet
     Also the front have Auth and SignUp and search data.
     An Observation I'll attached in both the back and front a Dockerfile if you wanna use it in a cointaner`,
@@ -99,18 +108,17 @@ export const ProjectList = [
       "Docker",
       "Socket.IO",
     ],
-    demo: "https://github.com/ThantZinPhyo-Slark/always-illest",
     frontEnd: "https://github.com/cone011/retrospective-front",
     backEnd: "https://github.com/cone011/retrospective-back",
-    image: PORTFOLIO,
+    image: RETRO,
   }),
   Object.freeze({
     id: 3,
-    title: "Retrospective App",
+    title: "Portfolio",
     about: `This project as you can see is my current portfolio.
-    A brief explanation about this project.
-    Which is made it with React JS, JavaScript and in this case for the style I use styled components
-    I'll leave my Github repository if you like feel to used it or take a look around. Also I attached a Dockerfile if you wanna use a container`,
+            A brief explanation about this project.
+            Which is made it with React JS, JavaScript and in this case for the style I use styled components
+            I'll leave my Github repository if you like feel to used it or take a look around. Also I attached a Dockerfile if you wanna use a container`,
     tags: ["ReactJS", "HTML", "CSS", "Web Development", "Socket.IO"],
     demo: "https://github.com/ThantZinPhyo-Slark/always-illest",
     github: "https://github.com/ThantZinPhyo-Slark/always-illest",
@@ -238,35 +246,57 @@ export const CertificateData = [
       "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Logo.png",
     link: "https://udemy-certificate.s3.amazonaws.com/image/UC-17ad005c-62d8-4e09-8792-69291ed5a0c3.jpg?v=1685759520000",
   }),
+  Object.freeze({
+    id: 5,
+    name: "Make it Real Bootcamp",
+    type: "Bootcamp FullStack",
+    companyLogo:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI79SZyxNPEXUHbgU_rE3tvNKc59qrxCcp2Q6PNlFerusQu_VTK1OxqW72T9Nt8og_F3s&usqp=CAU",
+    link: CERTIFICATE,
+  }),
+  Object.freeze({
+    id: 6,
+    name: "Bachelor Degree in Computer Science",
+    type: "University",
+    companyLogo:
+      "https://pbs.twimg.com/profile_images/1664144987116691456/OOm1GE2i_400x400.jpg",
+  }),
+  Object.freeze({
+    id: 7,
+    name: "Postgraduate Degree in Software Engineer",
+    type: "University - Currently in process",
+    companyLogo:
+      "https://pbs.twimg.com/profile_images/1664144987116691456/OOm1GE2i_400x400.jpg",
+  }),
 ];
 
-export const WorkExpirience = [
+export const WokrExpirience = [
   Object.freeze({
     id: 0,
     companyName: "Py Comunicaciones",
-    role: "Full Stack Developer / Data Analyst",
+    idClass: "unpair",
     date: "May 2022 - present",
-    idCss: "notpair",
+    role: "Full Stack Developer / Data Analyst",
   }),
   Object.freeze({
     id: 1,
     companyName: "INFOZOOM S.R.L.",
-    role: "Full Stack Developer",
+    idClass: "pair",
     date: "Fer 2019 - May 2022",
-    idCss: "pair",
+    role: "Full Staock Developer",
   }),
   Object.freeze({
     id: 2,
     companyName: "KEMSA CISA",
-    role: "Developer",
+    idClass: "unpair",
     date: "Fer 2018 - Fer 2019",
-    idCss: "notpair",
+    role: "Developer",
   }),
   Object.freeze({
     id: 3,
-    companyName: "INFOZOOM S.A.",
+    companyName: "INFOZOOM S.R.L. ",
+    idClass: "pair",
+    date: "Nov 2013 - Fer 2017",
     role: "Junior Developer / IT Support",
-    date: "Dic 2013- Fer 2017",
-    idCss: "pair",
   }),
 ];

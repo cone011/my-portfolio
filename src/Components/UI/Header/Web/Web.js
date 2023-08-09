@@ -15,6 +15,11 @@ const Web = () => {
         </a>
       </div>
       <div className={classes.webOption}>
+        <a href="#certification">
+          <i class="fi fi-rr-book-alt"></i> Certifications
+        </a>
+      </div>
+      <div className={classes.webOption}>
         <a href="#work">
           <i class="fi-rr-briefcase option-icon"></i>Work
         </a>

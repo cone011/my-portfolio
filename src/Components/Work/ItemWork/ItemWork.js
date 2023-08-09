@@ -6,15 +6,15 @@ const ItemWork = (props) => {
   return (
     <div
       className={classes.workContainer}
-      id={item.idCss === "pair" ? classes["pairContainer"] : ""}
+      id={item.idClass === "pair" ? classes["pairContainer"] : ""}
     >
       <div
-        className={classes.workData}
-        id={item.idCss === "pair" ? classes["pairWorkData"] : ""}
+        className={classes.workInfo}
+        id={item.idClass === "pair" ? classes["pairInfo"] : ""}
       >
-        <h1 className={classes.workDataTitle}>{item.companyName}</h1>
-        <h2 className={classes.workDataRole}>{`Role: ${item.role}`}</h2>
-        <h2 className={classes.workDataRole}>{item.date}</h2>
+        <h1 className={classes.workTitle}>{item.companyName}</h1>
+        <h2 className={classes.workDate}>{`Role: ${item.role}`}</h2>
+        <h2 className={classes.workDate}>{item.date}</h2>
       </div>
     </div>
   );
